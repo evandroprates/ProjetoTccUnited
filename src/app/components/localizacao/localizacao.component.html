@@ -1,0 +1,64 @@
+<div>
+    <img (click) = "VoltarLogin()" style="margin-top: 23px;
+    width: 27px;
+    margin-left: -8px;
+    margin-bottom: -38px; cursor: pointer;" src="assets\voltar.png">
+</div>
+
+
+<div style="display: flex; justify-content: center; flex-direction: column;">
+
+    <div style="justify-content: center; display: flex; flex-direction: column; align-items: center;">
+        <h2 style="color: white; margin-top: 72px;">Precisamos da sua localização</h2>
+        <img style="margin-top: 23px;
+        width: 41px;
+        margin-left: 12px;
+        margin-bottom: -87px;" src="assets\localizacao.png">
+    </div>
+
+    <div style="margin-top: 126px; background-color: rgb(134, 134, 134); width: 352px; height: 216px; display: flex; align-items: center; flex-direction: column; border-radius: 7px;">
+
+     <h3 style="color: white; margin-top: 20px;">Habilitar localização em tempo real?</h3>
+
+     <section class="example-section" style="margin-top: 26px;">
+       <mat-checkbox class="example-margin"></mat-checkbox>
+     </section>
+
+     <p style="margin-left: 27px; font-size: medium; font-family: ui-monospace;
+     color: white;
+     margin-top: 42px;
+     width: 242px;">Caso habilite iremos listar os profissionais mais próximos a você</p>
+
+    <h2 style="color: white; margin-top: 45px;">Ou</h2>
+
+    <h2 style="color: white; margin-top: -5px;">Informe um endereço</h2>
+
+    <form class="example-form">
+        <mat-form-field class="example-full-width" style="color: white;
+        width: 356px;" appearance="fill">
+          <mat-label style="color: white;">Endereço</mat-label>
+          <input matInput>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width" style="color: white;
+        width: 356px;" appearance="fill">
+            <mat-label style="color: white;">Bairro</mat-label>
+            <input matInput>
+          </mat-form-field>
+
+          <mat-form-field class="example-full-width" style="color: white;
+          width: 356px;" appearance="fill">
+            <mat-label style="color: white;">Cidade</mat-label>
+            <input matInput>
+          </mat-form-field>
+      
+      </form>
+
+      <button mat-stroked-button style="color: white; background-color: #5e00b5;" (click)="Opcoes()">Continuar</button>
+
+    </div>
+ </div>
+
+
+
+
