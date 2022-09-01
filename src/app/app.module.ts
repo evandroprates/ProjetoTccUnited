@@ -11,6 +11,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import { OpcoesComponent } from './components/opcoes/opcoes.component';
 import { HomeClienteComponent } from './components/home-cliente/home-cliente.component';
+import { GoogleMapsModule } from '@angular/google-maps'
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { HomeClienteComponent } from './components/home-cliente/home-cliente.com
     BrowserAnimationsModule,
     MatInputModule,
     MatButtonModule,
+    GoogleMapsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
