@@ -11,7 +11,8 @@ import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import { OpcoesComponent } from './components/opcoes/opcoes.component';
 import { HomeClienteComponent } from './components/home-cliente/home-cliente.component';
-import { GoogleMapsModule } from '@angular/google-maps'
+import { GoogleMapsModule } from '@angular/google-maps';
+import { MenuClienteComponent } from './components/menu-cliente/menu-cliente.component'
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { GoogleMapsModule } from '@angular/google-maps'
     LocalizacaoComponent,
     OpcoesComponent,
     HomeClienteComponent,
+    MenuClienteComponent,
   ],
   imports: [
     BrowserModule,

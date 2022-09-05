@@ -1,3 +1,4 @@
+import { MenuClienteComponent } from './components/menu-cliente/menu-cliente.component';
 import { HomeClienteComponent } from './components/home-cliente/home-cliente.component';
 import { OpcoesComponent } from './components/opcoes/opcoes.component';
 import { NgModule } from '@angular/core';
@@ -9,7 +10,8 @@ const routes: Routes = [
   { path: "", component: LoginComponent },
   { path: "localizacao", component: LocalizacaoComponent },
   { path: "opcoes", component: OpcoesComponent },
-  { path: "home-cliente", component: HomeClienteComponent }
+  { path: "home-cliente", component: HomeClienteComponent },
+  { path: "menu-cliente", component: MenuClienteComponent }
 ];
 
 @NgModule({

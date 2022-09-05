@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home-cliente',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeClienteComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
   
   ngOnInit(): void {}
   display: any;
@@ -21,6 +22,11 @@ export class HomeClienteComponent implements OnInit {
   }
   move(event: google.maps.MapMouseEvent) {
       if (event.latLng != null) this.display = event.latLng.toJSON();
+  }
+
+
+  MenuCliente(){
+    this.router.navigate(['/menu-cliente']);
   }
 
 }
