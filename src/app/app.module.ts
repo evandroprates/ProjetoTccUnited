@@ -12,7 +12,8 @@ import {MatButtonModule} from '@angular/material/button';
 import { OpcoesComponent } from './components/opcoes/opcoes.component';
 import { HomeClienteComponent } from './components/home-cliente/home-cliente.component';
 import { GoogleMapsModule } from '@angular/google-maps';
-import { MenuClienteComponent } from './components/menu-cliente/menu-cliente.component'
+import { MenuClienteComponent } from './components/menu-cliente/menu-cliente.component';
+import { AcompanhamentoSolicitacaoComponent } from './components/acompanhamento-solicitacao/acompanhamento-solicitacao.component'
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { MenuClienteComponent } from './components/menu-cliente/menu-cliente.com
     OpcoesComponent,
     HomeClienteComponent,
     MenuClienteComponent,
+    AcompanhamentoSolicitacaoComponent,
   ],
   imports: [
     BrowserModule,

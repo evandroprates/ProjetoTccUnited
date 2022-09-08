@@ -1,3 +1,4 @@
+import { AcompanhamentoSolicitacaoComponent } from './components/acompanhamento-solicitacao/acompanhamento-solicitacao.component';
 import { MenuClienteComponent } from './components/menu-cliente/menu-cliente.component';
 import { HomeClienteComponent } from './components/home-cliente/home-cliente.component';
 import { OpcoesComponent } from './components/opcoes/opcoes.component';
@@ -11,7 +12,8 @@ const routes: Routes = [
   { path: "localizacao", component: LocalizacaoComponent },
   { path: "opcoes", component: OpcoesComponent },
   { path: "home-cliente", component: HomeClienteComponent },
-  { path: "menu-cliente", component: MenuClienteComponent }
+  { path: "menu-cliente", component: MenuClienteComponent },
+  { path: "acompanhamento-solicitacao-cliente", component: AcompanhamentoSolicitacaoComponent }
 ];
 
 @NgModule({

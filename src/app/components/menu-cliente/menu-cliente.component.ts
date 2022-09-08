@@ -13,6 +13,10 @@ export class MenuClienteComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  AcompanhamentoSolicitacao(){
+    this.router.navigate(['/acompanhamento-solicitacao-cliente']);
+  }
+
   VoltarHome(){
     this.router.navigate(['/home-cliente']);
   }
