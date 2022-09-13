@@ -10,7 +10,17 @@ export class AcompanhamentoSolicitacaoComponent implements OnInit {
 
   constructor(private router: Router) { }
 
+  loading: boolean = true
+
   ngOnInit(): void {
+    setTimeout( () => 
+    this.DesabilitarLoading()
+    , 3000 );
+  }
+
+  DesabilitarLoading(){
+    this.loading = false,
+    this.router.navigate(['/preco-servico'])
   }
 
   VoltarMenuCliente(){

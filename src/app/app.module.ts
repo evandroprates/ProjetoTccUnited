@@ -13,7 +13,8 @@ import { OpcoesComponent } from './components/opcoes/opcoes.component';
 import { HomeClienteComponent } from './components/home-cliente/home-cliente.component';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { MenuClienteComponent } from './components/menu-cliente/menu-cliente.component';
-import { AcompanhamentoSolicitacaoComponent } from './components/acompanhamento-solicitacao/acompanhamento-solicitacao.component'
+import { AcompanhamentoSolicitacaoComponent } from './components/acompanhamento-solicitacao/acompanhamento-solicitacao.component';
+import { PrecoServicoComponent } from './components/preco-servico/preco-servico.component'
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { AcompanhamentoSolicitacaoComponent } from './components/acompanhamento-
     HomeClienteComponent,
     MenuClienteComponent,
     AcompanhamentoSolicitacaoComponent,
+    PrecoServicoComponent,
   ],
   imports: [
     BrowserModule,

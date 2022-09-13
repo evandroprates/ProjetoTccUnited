@@ -1,11 +1,11 @@
-<div>
+<!-- <div>
     <img (click) = "VoltarMenuCliente()" style="margin-top: 23px;
     width: 27px;
     margin-left: -24px;
     margin-bottom: -38px; cursor: pointer;" src="assets\voltar.png">
-</div>
+</div> -->
 
-<div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+<div [ngClass]="{'escurecer-tela':loading == true}" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
     <h2 style="color: white; margin-top: 61px;
     font-weight: 500;">Acompanhe sua Solicitação</h2>
 
@@ -74,4 +74,12 @@
         </div>
 
     </div>
+
 </div>
+
+<div style="display: flex; justify-content: center;">
+    <div class="lds-roller" *ngIf="loading == true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+</div>
+
+
+

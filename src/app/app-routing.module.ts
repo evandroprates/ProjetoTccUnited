@@ -1,3 +1,4 @@
+import { PrecoServicoComponent } from './components/preco-servico/preco-servico.component';
 import { AcompanhamentoSolicitacaoComponent } from './components/acompanhamento-solicitacao/acompanhamento-solicitacao.component';
 import { MenuClienteComponent } from './components/menu-cliente/menu-cliente.component';
 import { HomeClienteComponent } from './components/home-cliente/home-cliente.component';
@@ -13,7 +14,8 @@ const routes: Routes = [
   { path: "opcoes", component: OpcoesComponent },
   { path: "home-cliente", component: HomeClienteComponent },
   { path: "menu-cliente", component: MenuClienteComponent },
-  { path: "acompanhamento-solicitacao-cliente", component: AcompanhamentoSolicitacaoComponent }
+  { path: "acompanhamento-solicitacao-cliente", component: AcompanhamentoSolicitacaoComponent },
+  { path: "preco-servico", component: PrecoServicoComponent }
 ];
 
 @NgModule({
