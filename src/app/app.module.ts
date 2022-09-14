@@ -14,7 +14,8 @@ import { HomeClienteComponent } from './components/home-cliente/home-cliente.com
 import { GoogleMapsModule } from '@angular/google-maps';
 import { MenuClienteComponent } from './components/menu-cliente/menu-cliente.component';
 import { AcompanhamentoSolicitacaoComponent } from './components/acompanhamento-solicitacao/acompanhamento-solicitacao.component';
-import { PrecoServicoComponent } from './components/preco-servico/preco-servico.component'
+import { PrecoServicoComponent } from './components/preco-servico/preco-servico.component';
+import { AguardarServicoComponent } from './components/aguardar-servico/aguardar-servico.component'
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { PrecoServicoComponent } from './components/preco-servico/preco-servico.
     MenuClienteComponent,
     AcompanhamentoSolicitacaoComponent,
     PrecoServicoComponent,
+    AguardarServicoComponent,
   ],
   imports: [
     BrowserModule,

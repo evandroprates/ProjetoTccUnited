@@ -1,0 +1,68 @@
+<!-- <div>
+    <img (click) = "VoltarMenuCliente()" style="margin-top: 23px;
+    width: 27px;
+    margin-left: -24px;
+    margin-bottom: -38px; cursor: pointer;" src="assets\voltar.png">
+</div> -->
+
+<div [ngClass]="{'escurecer-tela':loading == true}" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+    <h2 style="color: white; margin-top: 61px;
+    font-weight: 500;">Aguarde alguns Minutos!</h2>
+
+    <img style="margin-top: 9px;
+    width: 67px;
+    margin-bottom: 10px;" src="assets\relogio.png">
+
+<div style="margin-top: 32px;
+width: 316px;
+height: 232px;
+background-color: rgb(101, 101, 101);border-radius: 11px; display: flex; justify-content: center;">
+
+<div style="display: flex; flex-direction: row; margin-top: 22px; display: flex;
+justify-content: center;">
+
+    <div style="display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-right: 184px;
+    margin-top: 2px;">
+
+        <div style="width: 16px;
+        height: 16px;
+        background-color: #85e485;
+        border-radius: 42px;
+        border: 2px solid black;"></div>
+
+    </div>
+
+    <div style="color: white; margin-left: 5px; display: flex;
+    flex-direction: column;
+    align-items: center;">
+
+        <h3 style="color: white;
+        font-weight: 500; margin-left: 13px;">Prestador a Caminho</h3>
+
+        <div style="width: 281px;
+        background-color: #7e7e7e;
+        height: 67px;
+        border-radius: 10px;">
+            <p style="margin-left: 9px;
+            margin-top: 12px;">Prestador está indo até você. Não saia da sua localização e aguarde o profissional.</p>
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+<div style="display: flex; justify-content: center;">
+    <div class="lds-roller" *ngIf="loading == true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+</div>
+
+
+
