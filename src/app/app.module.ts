@@ -16,7 +16,8 @@ import { MenuClienteComponent } from './components/menu-cliente/menu-cliente.com
 import { AcompanhamentoSolicitacaoComponent } from './components/acompanhamento-solicitacao/acompanhamento-solicitacao.component';
 import { PrecoServicoComponent } from './components/preco-servico/preco-servico.component';
 import { AguardarServicoComponent } from './components/aguardar-servico/aguardar-servico.component';
-import { ServicoFinalizadoComponent } from './components/servico-finalizado/servico-finalizado.component'
+import { ServicoFinalizadoComponent } from './components/servico-finalizado/servico-finalizado.component';
+import { SosComponent } from './components/sos/sos.component'
 
 
 @NgModule({
@@ -31,6 +32,7 @@ import { ServicoFinalizadoComponent } from './components/servico-finalizado/serv
     PrecoServicoComponent,
     AguardarServicoComponent,
     ServicoFinalizadoComponent,
+    SosComponent,
   ],
   imports: [
     BrowserModule,

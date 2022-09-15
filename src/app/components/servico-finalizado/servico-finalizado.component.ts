@@ -17,4 +17,8 @@ export class ServicoFinalizadoComponent implements OnInit {
     this.router.navigate(['/home-cliente']);
   }
 
+  Sos(){
+    this.router.navigate(['/sos']);
+  }
+
 }
