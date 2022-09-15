@@ -15,7 +15,8 @@ import { GoogleMapsModule } from '@angular/google-maps';
 import { MenuClienteComponent } from './components/menu-cliente/menu-cliente.component';
 import { AcompanhamentoSolicitacaoComponent } from './components/acompanhamento-solicitacao/acompanhamento-solicitacao.component';
 import { PrecoServicoComponent } from './components/preco-servico/preco-servico.component';
-import { AguardarServicoComponent } from './components/aguardar-servico/aguardar-servico.component'
+import { AguardarServicoComponent } from './components/aguardar-servico/aguardar-servico.component';
+import { ServicoFinalizadoComponent } from './components/servico-finalizado/servico-finalizado.component'
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { AguardarServicoComponent } from './components/aguardar-servico/aguardar
     AcompanhamentoSolicitacaoComponent,
     PrecoServicoComponent,
     AguardarServicoComponent,
+    ServicoFinalizadoComponent,
   ],
   imports: [
     BrowserModule,

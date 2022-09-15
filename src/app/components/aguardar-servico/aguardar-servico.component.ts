@@ -15,12 +15,12 @@ export class AguardarServicoComponent implements OnInit {
   ngOnInit(): void {
     setTimeout( () => 
     this.DesabilitarLoading()
-    , 3000 );
+    , 5000 );
   }
 
   DesabilitarLoading(){
     this.loading = false
-    // this.router.navigate(['/preco-servico'])
+    this.router.navigate(['/servico-finalizado'])
   }
 
 }

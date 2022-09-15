@@ -8,6 +8,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LocalizacaoComponent } from './components/localizacao/localizacao.component';
 import { LoginComponent } from './components/login/login.component';
+import { ServicoFinalizadoComponent } from './components/servico-finalizado/servico-finalizado.component';
 
 const routes: Routes = [
   { path: "", component: LoginComponent },
@@ -17,7 +18,8 @@ const routes: Routes = [
   { path: "menu-cliente", component: MenuClienteComponent },
   { path: "acompanhamento-solicitacao-cliente", component: AcompanhamentoSolicitacaoComponent },
   { path: "preco-servico", component: PrecoServicoComponent },
-  { path: "aguardar-servico", component: AguardarServicoComponent }
+  { path: "aguardar-servico", component: AguardarServicoComponent },
+  { path: "servico-finalizado", component: ServicoFinalizadoComponent }
 ];
 
 @NgModule({

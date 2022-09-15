@@ -15,7 +15,7 @@ export class AcompanhamentoSolicitacaoComponent implements OnInit {
   ngOnInit(): void {
     setTimeout( () => 
     this.DesabilitarLoading()
-    , 3000 );
+    , 5000 );
   }
 
   DesabilitarLoading(){
