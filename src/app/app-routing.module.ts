@@ -1,3 +1,5 @@
+import { ContinuarCadastroComponent } from './components/continuar-cadastro/continuar-cadastro.component';
+import { AvaliarServicoComponent } from './components/avaliar-servico/avaliar-servico.component';
 import { SosComponent } from './components/sos/sos.component';
 import { AguardarServicoComponent } from './components/aguardar-servico/aguardar-servico.component';
 import { PrecoServicoComponent } from './components/preco-servico/preco-servico.component';
@@ -21,7 +23,9 @@ const routes: Routes = [
   { path: "preco-servico", component: PrecoServicoComponent },
   { path: "aguardar-servico", component: AguardarServicoComponent },
   { path: "servico-finalizado", component: ServicoFinalizadoComponent },
-  { path: "sos", component: SosComponent }
+  { path: "sos", component: SosComponent },
+  { path: "avaliar-servico", component: AvaliarServicoComponent },
+  { path: "continuar-cadastro", component: ContinuarCadastroComponent }
 ];
 
 @NgModule({

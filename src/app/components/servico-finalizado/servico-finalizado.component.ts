@@ -13,8 +13,8 @@ export class ServicoFinalizadoComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  HomeCliente(){
-    this.router.navigate(['/home-cliente']);
+  AvaliarServico(){
+    this.router.navigate(['/avaliar-servico']);
   }
 
   Sos(){

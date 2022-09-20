@@ -1,0 +1,61 @@
+<div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+    <h2 style="color: white; margin-top: 61px;
+    font-weight: 500;">Avalie seu Serviço</h2>
+
+    <img style="margin-top: 9px;
+    width: 67px;
+    margin-bottom: 10px;" src="assets\like.png">
+
+<div style="margin-top: 32px;
+width: 316px;
+height: 411px;
+background-color: rgb(101, 101, 101);border-radius: 11px; display: flex; justify-content: center;">
+
+<div style="display: flex; flex-direction: row; margin-top: 22px; display: flex;
+justify-content: center;">
+
+    <div style="color: white; margin-left: 5px; display: flex;
+    flex-direction: column;
+    align-items: center;">
+
+    <img style="margin-top: 9px;
+    width: 67px;
+    margin-bottom: 10px;" src="assets\user.png">
+
+    <h3>Joelton</h3>
+
+    <p style="margin-left: 9px; color: #ffafaf;">Avalie o Prestador</p>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Avaliação</mat-label>
+        <mat-select>
+        <mat-option *ngFor="let ava of avaliacao" [value]="ava.value">
+            {{ava.value}}
+        </mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <div>
+        <textarea placeholder="Descreva sua experiência com Joelton" style="width: 262px;
+        height: 65px; margin-top: 10px;"></textarea>
+    </div>
+
+        <div style="display: flex;
+        width: 100%;
+        justify-content: center;">
+            <button mat-raised-button color="accent" style=" margin-top: 20px;   background-color: green;
+            margin-right: 17px;" (click)="HomeCliente()">Confirmar</button>
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+
+

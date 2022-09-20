@@ -16,19 +16,34 @@
           margin-left: 12px;" src="assets\iconeMech.png">
         </div>
 				<form>
-					<label for="chk" aria-hidden="true">Cadastrar</label>
-					<input type="text" name="txt" placeholder="User name" required="">
-					<input type="email" name="email" placeholder="Email" required="">
-					<input type="password" name="pswd" placeholder="Senha" required="">
-					<button (click)="Cadastrar()">Cadastrar</button>
+					<label for="chk" aria-hidden="true" style="margin-bottom: 10px; margin-top: 34px;">Cadastrar</label>
+					<!-- <input [(ngModel)] = "dadosCadastro.login" type="text" name="txt" placeholder="User name" required=""> -->
+					<input [(ngModel)] = "dadosCadastro.email" type="email" name="email" placeholder="Email" required="">
+					<input [(ngModel)] = "dadosCadastro.senha" type="password" name="pswd" placeholder="Senha" required="">
+					<input [(ngModel)] = "dadosCadastro.nome" type="text" name="nome" placeholder="Nome" required="">
+					<input [(ngModel)] = "dadosCadastro.idade" type="number" name="idade" placeholder="Idade" required="">
+					<input [(ngModel)] = "dadosCadastro.telefone" type="number" name="telefone" placeholder="Telefone" required="">
+					<div style="display: flex;
+					justify-content: center;">
+						<mat-form-field appearance="fill" required="" style="
+						width: 236px;">
+							<mat-label>Sexo</mat-label>
+							<mat-select style="color: white;" name="sexo" [(ngModel)] = "dadosCadastro.sexo">
+							  <mat-option *ngFor="let sexo of sexos" [value]="sexo.value">
+								{{sexo.value}}
+							  </mat-option>
+							</mat-select>
+						</mat-form-field>
+					</div>
+					<button style="margin-top: -5px" (click)="Cadastrar()">Cadastrar</button>
 				</form>
 			</div>
 
 			<div class="login">
 				<!-- <form> -->
 					<label style="margin-top: 82px;" for="chk" aria-hidden="true">Logar</label>
-					<input type="email" name="email" placeholder="Email" required="">
-					<input type="password" name="pswd" placeholder="Senha" required="">
+					<input [(ngModel)] = "dadosLogin.email" type="email" name="email" placeholder="Email" required="">
+					<input [(ngModel)] = "dadosLogin.senha" type="password" name="pswd" placeholder="Senha" required="">
 					<button  (click)="Logar()">Login</button>
 				<!-- </form> -->
 			</div>

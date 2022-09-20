@@ -3,9 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './components/login/login.component';
 import { LocalizacaoComponent } from './components/localizacao/localizacao.component';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatSelectModule} from '@angular/material/select';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
@@ -17,7 +20,9 @@ import { AcompanhamentoSolicitacaoComponent } from './components/acompanhamento-
 import { PrecoServicoComponent } from './components/preco-servico/preco-servico.component';
 import { AguardarServicoComponent } from './components/aguardar-servico/aguardar-servico.component';
 import { ServicoFinalizadoComponent } from './components/servico-finalizado/servico-finalizado.component';
-import { SosComponent } from './components/sos/sos.component'
+import { SosComponent } from './components/sos/sos.component';
+import { AvaliarServicoComponent } from './components/avaliar-servico/avaliar-servico.component';
+import { ContinuarCadastroComponent } from './components/continuar-cadastro/continuar-cadastro.component'
 
 
 @NgModule({
@@ -33,6 +38,8 @@ import { SosComponent } from './components/sos/sos.component'
     AguardarServicoComponent,
     ServicoFinalizadoComponent,
     SosComponent,
+    AvaliarServicoComponent,
+    ContinuarCadastroComponent,
   ],
   imports: [
     BrowserModule,
@@ -41,7 +48,10 @@ import { SosComponent } from './components/sos/sos.component'
     BrowserAnimationsModule,
     MatInputModule,
     MatButtonModule,
-    GoogleMapsModule
+    GoogleMapsModule,
+    MatSelectModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

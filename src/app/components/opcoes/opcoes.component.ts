@@ -1,3 +1,4 @@
+import { CadastroLoginServiceService } from 'src/app/shared/cadastro-login-service.service';
 import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
@@ -8,17 +9,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OpcoesComponent implements OnInit {
 
-  constructor(private router : Router) { }
+  constructor(private router : Router, public service:CadastroLoginServiceService) { }
 
   ngOnInit(): void {
+    this.idCadastro = window.localStorage.getItem('Id')
   }
 
-  VoltarLocalizacao(){
-    this.router.navigate(['/localizacao']);
+  idCadastro : any = 0
+
+  VoltarLogin(){
+    this.router.navigate(['']);
   }
+
 
   HomeCliente(){
-    this.router.navigate(['/home-cliente']);
+    this.idCadastro = parseInt(this.idCadastro)
+    this.service.SetTipoCadastroCliente(this.idCadastro).subscribe(
+      response => {
+        this.router.navigate(['/home-cliente']);
+     },
+     error => {console.log(error);}
+   )
+  }
+
+  HomeMecanico(){
+    // this.router.navigate(['/home-cliente']);
   }
 
 }
