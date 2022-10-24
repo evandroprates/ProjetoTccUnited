@@ -22,7 +22,8 @@ import { AguardarServicoComponent } from './components/aguardar-servico/aguardar
 import { ServicoFinalizadoComponent } from './components/servico-finalizado/servico-finalizado.component';
 import { SosComponent } from './components/sos/sos.component';
 import { AvaliarServicoComponent } from './components/avaliar-servico/avaliar-servico.component';
-import { ContinuarCadastroComponent } from './components/continuar-cadastro/continuar-cadastro.component'
+import { ContinuarCadastroComponent } from './components/continuar-cadastro/continuar-cadastro.component';
+import { CadastrarServicoComponent } from './components/cadastrar-servico/cadastrar-servico.component'
 
 
 @NgModule({
@@ -40,6 +41,7 @@ import { ContinuarCadastroComponent } from './components/continuar-cadastro/cont
     SosComponent,
     AvaliarServicoComponent,
     ContinuarCadastroComponent,
+    CadastrarServicoComponent,
   ],
   imports: [
     BrowserModule,

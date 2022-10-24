@@ -1,0 +1,44 @@
+<div>
+    <img (click) = "VoltarOpcoes()" style="margin-top: 23px;
+    width: 27px;
+    margin-left: -31px;
+    margin-bottom: -38px; cursor: pointer;" src="assets\voltar.png">
+</div>
+
+
+<div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+    <h2 style="color: white; margin-top: 61px;
+    font-weight: 500;">Cadastrar Serviços</h2>
+
+<img style="margin-top: 5px;
+width: 61px;
+margin-bottom: 10px;" src="assets\servicos.png">
+</div>
+
+
+
+<div style="display: flex; flex-direction: column;">
+
+    <div style="display: flex; align-items: center; justify-content: center;" *ngFor="let servico of servicos">
+
+        <div style="border: 1px solid black;
+        width: 301px;
+        height: 44px;
+        margin-top: 24px;">
+
+        <div>
+            
+            <h2 style="color: white; margin-left: 9px; margin-top: 5px; float: left;">{{servico.servico}}</h2>
+
+            <mat-checkbox class="example-margin" style="float: right; margin-top: 12px;
+            margin-right: 12px;" (change)="checkCheckBoxvalue($event, servico.servico)"></mat-checkbox>
+
+        </div>
+    
+    </div>
+
+    </div>
+
+    <button mat-button color="primary" (click)="SalvarServicos()">Continuar</button>
+
+</div>

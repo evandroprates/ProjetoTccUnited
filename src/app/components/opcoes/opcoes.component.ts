@@ -1,3 +1,4 @@
+import { TipoCadastro } from './../../models/TipoCadastro';
 import { CadastroLoginServiceService } from 'src/app/shared/cadastro-login-service.service';
 import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
@@ -12,10 +13,15 @@ export class OpcoesComponent implements OnInit {
   constructor(private router : Router, public service:CadastroLoginServiceService) { }
 
   ngOnInit(): void {
-    this.idCadastro = window.localStorage.getItem('Id')
+    this.tipoCadastro.id = window.localStorage.getItem('Id')
   }
 
-  idCadastro : any = 0
+  // idCadastro : any = 0
+
+  tipoCadastro : TipoCadastro = {
+    id: 0,
+    tipo: 0
+  }
 
   VoltarLogin(){
     this.router.navigate(['']);
@@ -23,8 +29,9 @@ export class OpcoesComponent implements OnInit {
 
 
   HomeCliente(){
-    this.idCadastro = parseInt(this.idCadastro)
-    this.service.SetTipoCadastroCliente(this.idCadastro).subscribe(
+    this.tipoCadastro.id = parseInt(this.tipoCadastro.id)
+    this.tipoCadastro.tipo = 1
+    this.service.SetTipoCadastroCliente(this.tipoCadastro).subscribe(
       response => {
         this.router.navigate(['/home-cliente']);
      },
@@ -32,8 +39,15 @@ export class OpcoesComponent implements OnInit {
    )
   }
 
-  HomeMecanico(){
-    // this.router.navigate(['/home-cliente']);
+  CadastrarServico(){
+    this.tipoCadastro.id = parseInt(this.tipoCadastro.id)
+    this.tipoCadastro.tipo = 2
+    this.service.SetTipoCadastroCliente(this.tipoCadastro).subscribe(
+      response => {
+        this.router.navigate(['/cadastrar-servico']);
+     },
+     error => {console.log(error);}
+   )
   }
 
 }

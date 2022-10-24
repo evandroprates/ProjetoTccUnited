@@ -46,9 +46,9 @@ export class LoginComponent implements OnInit {
        if (response == null) {
          this.ExibirMensagem('Erro', 'Não possui cadastro!', 'warning', response)
        } else {
-        if (response.TipoCliente == 1) {
+        if (response.tipoCliente == 1) {
           this.router.navigate(['/home-cliente']);
-        } else if (response.TipoCliente == 2) {
+        } else if (response.tipoCliente == 2) {
           // this.router.navigate(['/home-mecanico']);
         } else {
           window.localStorage.setItem('Id', response.cadastroId)

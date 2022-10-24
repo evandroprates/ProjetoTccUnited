@@ -1,4 +1,5 @@
-import { HttpClient } from '@angular/common/http';
+import { TipoCadastro } from './../models/TipoCadastro';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
@@ -11,6 +12,7 @@ export class CadastroLoginServiceService {
   constructor(private http:HttpClient) { }
 
   readonly baseUrl = 'http://localhost:64992/api/Cadastro'
+  headers = new HttpHeaders().set('Content-Type', 'application/json; charset=utf-8')
 
   postCadastrar(dadosCadastrais : any) : Observable<any> {
     return  this.http.post(this.baseUrl + '/Cadastrar', dadosCadastrais);
@@ -20,7 +22,15 @@ export class CadastroLoginServiceService {
     return  this.http.post(this.baseUrl + '/Login', dadosLogin);
   }
 
-  SetTipoCadastroCliente(id : number) {
-    return  this.http.post(this.baseUrl + '/SetTipoCadastroCliente', id);
+  SetTipoCadastroCliente(tipoCadastro : TipoCadastro) {
+    return  this.http.post(this.baseUrl + '/SetTipoCadastroCliente', tipoCadastro);
+  }
+
+  PegarServicos(): Observable<any>{
+    return this.http.get(this.baseUrl+ '/PegarServicos', { headers: this.headers})
+  }
+
+  CadastrarServicosMecanico(servicos : any): Observable<any>{
+    return this.http.post(this.baseUrl+ '/CadastrarServicosMecanico', servicos)
   }
 }
