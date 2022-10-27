@@ -8,11 +8,11 @@
 
 <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
     <h2 style="color: white; margin-top: 61px;
-    font-weight: 500;">Cadastrar Serviços</h2>
+    font-weight: 500;">Cadastrar Preços</h2>
 
 <img style="margin-top: 5px;
 width: 61px;
-margin-bottom: 10px;" src="assets\servicos.png">
+margin-bottom: 10px;" src="assets\preco.png">
 </div>
 
 
@@ -30,8 +30,10 @@ margin-bottom: 10px;" src="assets\servicos.png">
             
             <h2 style="color: white; margin-left: 9px; margin-top: 5px; float: left;">{{servico.servico}}</h2>
 
-            <mat-checkbox class="example-margin" style="float: right; margin-top: 12px;
-            margin-right: 12px;" (change)="checkCheckBoxvalue($event, servico.servico)"></mat-checkbox>
+            <mat-form-field class="example-full-width" style="float: right; margin-top: -7px; width: 100px; color: white" appearance="fill">
+                <mat-label style="color: white">Valor</mat-label>
+                <input style="color: white" matInput  [(ngModel)]= "servico.valor" name="preco">
+              </mat-form-field>
 
         </div>
     
@@ -39,6 +41,6 @@ margin-bottom: 10px;" src="assets\servicos.png">
 
     </div>
 
-    <button mat-raised-button style="margin-top: 146px;" color="primary"(click)="SalvarServicos()">Continuar</button>
+    <button mat-raised-button style="margin-top: 348px;" color="primary"(click)="SalvarServicos()">Continuar</button>
 
 </div>

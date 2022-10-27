@@ -23,8 +23,12 @@ import { ServicoFinalizadoComponent } from './components/servico-finalizado/serv
 import { SosComponent } from './components/sos/sos.component';
 import { AvaliarServicoComponent } from './components/avaliar-servico/avaliar-servico.component';
 import { ContinuarCadastroComponent } from './components/continuar-cadastro/continuar-cadastro.component';
-import { CadastrarServicoComponent } from './components/cadastrar-servico/cadastrar-servico.component'
-
+import { CadastrarServicoComponent } from './components/cadastrar-servico/cadastrar-servico.component';
+import { CadastrarPrecosComponent } from './components/cadastrar-precos/cadastrar-precos.component';
+import { HomeMecanicoComponent } from './components/home-mecanico/home-mecanico.component';
+import { BuscarServicosComponent } from './components/buscar-servicos/buscar-servicos.component';
+import { ServicoEncontradoDialogComponent } from './components/servico-encontrado-dialog/servico-encontrado-dialog.component'
+import {MatDialogModule} from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -42,6 +46,10 @@ import { CadastrarServicoComponent } from './components/cadastrar-servico/cadast
     AvaliarServicoComponent,
     ContinuarCadastroComponent,
     CadastrarServicoComponent,
+    CadastrarPrecosComponent,
+    HomeMecanicoComponent,
+    BuscarServicosComponent,
+    ServicoEncontradoDialogComponent,
   ],
   imports: [
     BrowserModule,
@@ -53,7 +61,8 @@ import { CadastrarServicoComponent } from './components/cadastrar-servico/cadast
     GoogleMapsModule,
     MatSelectModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,14 @@
+<div>
+    <google-map height="700px"
+            width="400px"
+            [center]="center"
+            [zoom]="zoom"
+            (mapClick)="moveMap($event)"
+            (mapMousemove)="move($event)">
+    </google-map>
+</div>
+
+<div style="display: flex; justify-content: center; margin-top: 60px;">
+    <button mat-raised-button color="primary" (click)="BuscarServico()" >Atendimento</button>
+    <button mat-raised-button color="accent" style="margin-left: 66px;">Seu Perfil</button>
+</div>

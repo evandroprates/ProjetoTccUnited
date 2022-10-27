@@ -42,7 +42,7 @@ export class CadastrarServicoComponent implements OnInit {
           id: 0,
           IdCadastro: window.localStorage.getItem('Id'),
           servico : '',
-          valor : ''
+          valor : 0
         }
         // var a = this.servicosSelecionados.includes(servico)
         cadastroServicos.servico = servico.trim()
@@ -59,10 +59,11 @@ export class CadastrarServicoComponent implements OnInit {
     this.service.CadastrarServicosMecanico(this.servicosSelecionados).subscribe(
       response => {
         this.servicos = response
-        console.log(this.servicos)
       },
       error => {console.log(error);}
     )
+
+    this.router.navigate(['/cadastrar-precos']);
   }
   
 

@@ -1,3 +1,6 @@
+import { BuscarServicosComponent } from './components/buscar-servicos/buscar-servicos.component';
+import { HomeMecanicoComponent } from './components/home-mecanico/home-mecanico.component';
+import { CadastrarPrecosComponent } from './components/cadastrar-precos/cadastrar-precos.component';
 import { CadastrarServicoComponent } from './components/cadastrar-servico/cadastrar-servico.component';
 import { ContinuarCadastroComponent } from './components/continuar-cadastro/continuar-cadastro.component';
 import { AvaliarServicoComponent } from './components/avaliar-servico/avaliar-servico.component';
@@ -27,7 +30,10 @@ const routes: Routes = [
   { path: "sos", component: SosComponent },
   { path: "avaliar-servico", component: AvaliarServicoComponent },
   { path: "continuar-cadastro", component: ContinuarCadastroComponent },
-  { path: "cadastrar-servico", component: CadastrarServicoComponent }
+  { path: "cadastrar-servico", component: CadastrarServicoComponent },
+  { path: "cadastrar-precos", component: CadastrarPrecosComponent },
+  { path: "home-mecanico", component: HomeMecanicoComponent },
+  { path: "buscar-servico", component: BuscarServicosComponent }
 ];
 
 @NgModule({

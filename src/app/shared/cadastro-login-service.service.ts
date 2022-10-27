@@ -33,4 +33,12 @@ export class CadastroLoginServiceService {
   CadastrarServicosMecanico(servicos : any): Observable<any>{
     return this.http.post(this.baseUrl+ '/CadastrarServicosMecanico', servicos)
   }
+
+  PegarServicosMecanico(id : any): Observable<any>{
+    return this.http.post(this.baseUrl+ '/PegarServicosMecanico', JSON.parse(id))
+  }
+
+  CadastrarPrecoServicosMecanico(servicos : any): Observable<any>{
+    return this.http.post(this.baseUrl+ '/CadastrarPrecoServicosMecanico', servicos)
+  }
 }
