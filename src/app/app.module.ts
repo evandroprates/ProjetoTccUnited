@@ -29,6 +29,7 @@ import { HomeMecanicoComponent } from './components/home-mecanico/home-mecanico.
 import { BuscarServicosComponent } from './components/buscar-servicos/buscar-servicos.component';
 import { ServicoEncontradoDialogComponent } from './components/servico-encontrado-dialog/servico-encontrado-dialog.component'
 import {MatDialogModule} from '@angular/material/dialog';
+import { DestinoMecanicoComponent } from './components/destino-mecanico/destino-mecanico.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import {MatDialogModule} from '@angular/material/dialog';
     HomeMecanicoComponent,
     BuscarServicosComponent,
     ServicoEncontradoDialogComponent,
+    DestinoMecanicoComponent,
   ],
   imports: [
     BrowserModule,

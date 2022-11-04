@@ -8,9 +8,13 @@ import { Router } from '@angular/router';
 })
 export class ServicoEncontradoDialogComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router : Router) { }
 
   ngOnInit(): void {
+  }
+
+  Aceitar(){
+    this.router.navigate(['/destino-mecanico']);
   }
 
   Rejeitar(){
