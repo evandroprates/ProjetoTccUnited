@@ -29,4 +29,8 @@ export class HomeClienteComponent implements OnInit {
     this.router.navigate(['/menu-cliente']);
   }
 
+  Perfil(){
+    this.router.navigate(['/perfil']);
+  }
+
 }

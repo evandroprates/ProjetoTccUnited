@@ -1,3 +1,4 @@
+import { PerfilComponent } from './components/perfil/perfil.component';
 import { DestinoMecanicoComponent } from './components/destino-mecanico/destino-mecanico.component';
 import { BuscarServicosComponent } from './components/buscar-servicos/buscar-servicos.component';
 import { HomeMecanicoComponent } from './components/home-mecanico/home-mecanico.component';
@@ -35,7 +36,8 @@ const routes: Routes = [
   { path: "cadastrar-precos", component: CadastrarPrecosComponent },
   { path: "home-mecanico", component: HomeMecanicoComponent },
   { path: "buscar-servico", component: BuscarServicosComponent },
-  { path: "destino-mecanico", component: DestinoMecanicoComponent }
+  { path: "destino-mecanico", component: DestinoMecanicoComponent },
+  { path: "perfil", component: PerfilComponent }
 ];
 
 @NgModule({

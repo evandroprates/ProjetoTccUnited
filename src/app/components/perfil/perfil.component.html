@@ -1,0 +1,34 @@
+
+<div style="display: flex; justify-content: center; flex-direction: column;">
+
+    <div style="justify-content: center; display: flex; flex-direction: column; align-items: center;">
+        <h2 style="color: white; margin-top: 72px;">Seu Perfil</h2>
+        <img style="margin-top: 23px;
+        width: 150px;
+        margin-left: 12px;
+        margin-bottom: -87px;" src="assets\usuario.png">
+    </div>
+
+
+    <input [(ngModel)] = "dadosPerfil.email" type="email" name="email" placeholder="Email" required="" style="margin-top: 153px;">
+					<input [(ngModel)] = "dadosPerfil.senha" type="password" name="pswd" placeholder="Senha" required="">
+					<input [(ngModel)] = "dadosPerfil.nome" type="text" name="nome" placeholder="Nome" required="">
+					<input [(ngModel)] = "dadosPerfil.idade" type="number" name="idade" placeholder="Idade" required="">
+					<input [(ngModel)] = "dadosPerfil.telefone" type="number" name="telefone" placeholder="Telefone" required="">
+					<div style="display: flex;
+					justify-content: center;">
+						<mat-form-field appearance="fill" required="" style="
+						width: 236px;">
+							<mat-label>Sexo</mat-label>
+							<mat-select style="color: white;" name="sexo" [(ngModel)] = "dadosPerfil.sexo">
+							  <mat-option *ngFor="let sexo of sexos" [value]="sexo.value">
+								{{sexo.value}}
+							  </mat-option>
+							</mat-select>
+						</mat-form-field>
+					</div>
+
+
+                    <button mat-raised-button color="accent" (click)="Salvar()" style="margin-left: 66px;">Salvar</button>
+
+</div>

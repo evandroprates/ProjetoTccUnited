@@ -30,6 +30,7 @@ import { BuscarServicosComponent } from './components/buscar-servicos/buscar-ser
 import { ServicoEncontradoDialogComponent } from './components/servico-encontrado-dialog/servico-encontrado-dialog.component'
 import {MatDialogModule} from '@angular/material/dialog';
 import { DestinoMecanicoComponent } from './components/destino-mecanico/destino-mecanico.component';
+import { PerfilComponent } from './components/perfil/perfil.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { DestinoMecanicoComponent } from './components/destino-mecanico/destino-
     BuscarServicosComponent,
     ServicoEncontradoDialogComponent,
     DestinoMecanicoComponent,
+    PerfilComponent,
   ],
   imports: [
     BrowserModule,

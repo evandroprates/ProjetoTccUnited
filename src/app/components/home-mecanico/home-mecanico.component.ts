@@ -28,4 +28,8 @@ export class HomeMecanicoComponent implements OnInit {
     this.router.navigate(['/buscar-servico']);
   }
 
+  Perfil(){
+    this.router.navigate(['/perfil']);
+  }
+
 }
